@@ -9,6 +9,7 @@ module.exports = {
 					console.log(err);
 					return next(error(500, err));
 				}else{
+					console.log(result);
 					res.status(200).json({
 						isSuccess:true,
 						message:'操作成功',
