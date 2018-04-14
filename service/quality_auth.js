@@ -2,6 +2,7 @@
 
 module.exports = {
 	getQualityAuthData:function(req, res, next){
+		console.log('========1=========')
 		req.db.query(
 			'select * from T2_3_1 limit 10,10',
 			(err, result) => {
