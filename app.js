@@ -39,6 +39,7 @@ var pool = new sql.ConnectionPool({
 
 		app.use(function(req, res, next){
 			req.db = pool.request();
+			next();
 		});
 
 		app.use('/', index);
