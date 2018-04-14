@@ -3,7 +3,7 @@ var error = require('../util/error');
 module.exports = {
 	getQualityAuthData:function(req, res, next){
 		req.db.query(
-			'select * from T2_3_1 limit 10',
+			'select * from T2_3_1 offset 4 rows fetch next 5 rows only',
 			(err, result) => {
 				if(err){
 					console.log(err);
