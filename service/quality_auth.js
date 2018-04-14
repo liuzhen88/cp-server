@@ -6,6 +6,7 @@ module.exports = {
 			'select * from T2_3_1 limit 10,10',
 			(err, result) => {
 				if(err){
+					console.log(err);
 					return next(error(500, err));
 				}else{
 					res.status(200).json({
