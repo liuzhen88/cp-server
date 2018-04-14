@@ -61,7 +61,9 @@ var pool = new sql.ConnectionPool({
 		  res.render('error');
 		});
 
-
+		app.listen(9527,function(){
+			console.log('cp server start at port 9527');
+		})
 	}
 });
 
