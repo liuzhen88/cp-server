@@ -11,7 +11,7 @@ module.exports = {
 		}
 		else{
 			req.db.query(
-				"select * from T2_3_1 where yangpin_xh='"+cpbh+"'",
+				"select top 1 * from T2_3_1 order by luru_sj desc",
 				(err, result) => {
 					if(err){
 						console.error(err);
