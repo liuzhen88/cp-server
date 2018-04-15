@@ -3,7 +3,7 @@ var error = require('../util/error');
 module.exports = {
 	getQualityAuthData:function(req, res, next){
 		req.db.query(
-			"select * from T2_3_1 where pihao=1",
+			"select * from T2_3_1 where pihao='18048001-1'",
 			(err, result) => {
 				if(err){
 					console.log(err);
