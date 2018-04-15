@@ -14,10 +14,9 @@ module.exports = {
 				"select * from T2_3_1 where yangpin_xh='"+cpbh+"'",
 				(err, result) => {
 					if(err){
-						console.log(err);
+						console.error(err);
 						return next(error(500, err));
 					}else{
-						console.log(result);
 						res.status(200).json({
 							isSuccess:true,
 							message:'操作成功',

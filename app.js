@@ -31,7 +31,7 @@ var pool = new sql.ConnectionPool({
 	database:'dsc010207_db'
 },function(err){
 	if(err){
-		console.log(err);
+		console.error(err);
 	}else{
 		console.log('db connect success');
 
